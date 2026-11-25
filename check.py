@@ -1,14 +1,31 @@
-import os
-from dotenv import load_dotenv
+"""Setup check: is GROQ_API_KEY set, and does the configured model answer?
 
-# This looks for the .env file
-load_dotenv()
+Run:  python check.py
+"""
 
-# This pulls the key from the .env file
-key = os.getenv("GROQ_API_KEY")
+import sys
 
-if key:
-    print("✅ Success! Your .env file is set up correctly.")
-    print(f"Your key starts with: {key[:5]}...")
-else:
-    print("❌ Error: Could not find GROQ_API_KEY in the .env file.")
+from recruit_agent.analyzer import build_llm
+from recruit_agent.config import load_settings
+
+
+def main() -> int:
+    settings = load_settings()
+    if not settings.groq_api_key:
+        print("❌ GROQ_API_KEY is not set. Copy .env.example to .env and add your key.")
+        return 1
+    print(f"✅ Found GROQ_API_KEY (starts with {settings.groq_api_key[:5]}...).")
+
+    llm = build_llm(settings.groq_model, settings.groq_api_key, settings.temperature)
+    try:
+        reply = llm.invoke('Reply with exactly this JSON: {"status": "ok"}').content
+    except Exception as exc:
+        print(f"❌ Call to model '{settings.groq_model}' failed: {exc}")
+        return 1
+
+    print(f"✅ Model '{settings.groq_model}' answered: {reply.strip()}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

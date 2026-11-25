@@ -1,0 +1,6 @@
+[server]
+# Matches max_pdf_mb in recruit_agent/config.py.
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false

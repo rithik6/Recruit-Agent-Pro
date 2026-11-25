@@ -1,0 +1,61 @@
+"""Predefined job roles and the skills each one expects."""
+
+JOB_ROLES: dict[str, str] = {
+    # --- AI, ML & DATA SCIENCE ---
+    "AI / ML Engineer": "Skills: Python, PyTorch, TensorFlow, LLMs, RAG, Model Deployment.",
+    "Data Scientist": "Skills: Statistics, Python, R, Machine Learning, Data Cleaning, Scikit-learn.",
+    "Data Analyst": "Skills: SQL, Excel, PowerBI, Tableau, Exploratory Data Analysis (EDA).",
+    "Data Engineer": "Skills: ETL Pipelines, Spark, Hadoop, SQL, Airflow, Data Warehousing.",
+    "NLP Researcher": "Skills: Transformers, BERT, GPT, Tokenization, Linguistics, Deep Learning.",
+    "Computer Vision Engineer": "Skills: OpenCV, CNNs, Image Processing, Object Detection, YOLO.",
+    "MLOps Engineer": "Skills: Model Monitoring, CI/CD for ML, Kubernetes, MLflow, Docker.",
+    "Deep Learning Engineer": "Skills: Neural Networks, Keras, CUDA, GPU Optimization, PyTorch.",
+    "AI Product Manager": "Skills: AI Ethics, Product Lifecycle, Agile, Technical Communication.",
+    "Big Data Architect": "Skills: NoSQL, Kafka, Cassandra, Distributed Systems, Spark.",
+    # --- WEB & MOBILE DEVELOPMENT ---
+    "Full Stack Developer": "Skills: React, Node.js, HTML/CSS, MongoDB, JavaScript, API Integration.",
+    "Backend Developer": "Skills: Python, Django, FastAPI, Databases (PostgreSQL), Redis, Docker.",
+    "Frontend Developer": "Skills: JavaScript, React, Vue, CSS Frameworks, UI/UX Principles.",
+    "Python Developer": "Skills: Django, Flask, Scripting, Automation, REST APIs.",
+    "Java Developer": "Skills: Spring Boot, Microservices, Hibernate, Multi-threading.",
+    "Android Developer": "Skills: Kotlin, Java, Android SDK, Jetpack Compose, API Integration.",
+    "iOS Developer": "Skills: Swift, SwiftUI, Objective-C, Xcode, Cocoa Touch.",
+    "PHP Developer": "Skills: Laravel, Symfony, MySQL, WordPress, Backend Logic.",
+    "React Developer": "Skills: React.js, Redux, Hooks, Tailwind CSS, Frontend State.",
+    "Angular Developer": "Skills: TypeScript, Angular Framework, RXJS, Material UI.",
+    # --- CLOUD, DEVOPS & INFRASTRUCTURE ---
+    "Cloud Architect": "Skills: AWS, Azure, GCP, Terraform, Kubernetes, Networking.",
+    "DevOps Engineer": "Skills: CI/CD, Docker, Kubernetes, Jenkins, Linux, Monitoring Tools.",
+    "Site Reliability Engineer (SRE)": "Skills: Systems Engineering, Automation, Incident Response, Python.",
+    "AWS Specialist": "Skills: EC2, S3, Lambda, IAM, VPC, CloudFormation.",
+    "Azure Administrator": "Skills: Azure AD, Virtual Machines, Azure DevOps, Networking.",
+    "Cloud Security Engineer": "Skills: Cloud Identity, Encryption, Compliance, Network Security.",
+    "Network Engineer": "Skills: TCP/IP, Cisco, Routing, Switching, Firewalls, DNS.",
+    "System Administrator": "Skills: Linux/Windows Server, Scripting, Active Directory, Backups.",
+    "Kubernetes Administrator": "Skills: Helm, K8s Architecture, Container Orchestration, Monitoring.",
+    "Infrastructure Engineer": "Skills: IaC, Terraform, Ansible, Shell Scripting, Bare Metal.",
+    # --- CYBERSECURITY ---
+    "Cybersecurity Analyst": "Skills: Network Security, Pentesting, SIEM, Threat Intelligence, Compliance.",
+    "Information Security Manager": "Skills: Risk Management, ISO 27001, GRC, Policy Design.",
+    "Ethical Hacker / Pen Tester": "Skills: Kali Linux, Metasploit, Web App Security, OWASP.",
+    "Security Architect": "Skills: Zero Trust, Encryption Protocols, Security Frameworks.",
+    "SOC Analyst": "Skills: Incident Logging, Log Analysis, Splunk, Threat Hunting.",
+    # --- SOFTWARE ENGINEERING & QUALITY ---
+    "Software Architect": "Skills: Design Patterns, System Design, Scalability, Architecture Blueprints.",
+    "QA Automation Engineer": "Skills: Selenium, PyTest, Cypress, Automated Testing, Jenkins.",
+    "Manual Tester": "Skills: Test Case Design, Bug Tracking, Regression Testing, SDLC.",
+    "Embedded Systems Engineer": "Skills: C, C++, Microcontrollers, RTOS, Firmware Development.",
+    "Blockchain Developer": "Skills: Solidity, Ethereum, Smart Contracts, Rust, Cryptography.",
+    "Game Developer": "Skills: Unity, Unreal Engine, C#, C++, 3D Modeling.",
+    "RPA Developer": "Skills: UiPath, Automation Anywhere, Blue Prism, Process Mining.",
+    # --- DATABASE & BI ---
+    "SQL Developer": "Skills: Complex Queries, Stored Procedures, Indexing, Database Optimization.",
+    "Database Administrator (DBA)": "Skills: Recovery, Patching, Tuning, Security, High Availability.",
+    "Business Intelligence (BI) Developer": "Skills: DAX, SQL, Data Modeling, ETL, Reporting Tools.",
+    "Tableau Developer": "Skills: Data Viz, Dashboards, LOD Expressions, Tableau Server.",
+    # --- MANAGEMENT & OTHER ---
+    "Project Manager": "Skills: Agile, Scrum, JIRA, Resource Planning, Stakeholder Management.",
+    "Business Analyst": "Skills: Requirements Gathering, UML, User Stories, Gap Analysis.",
+    "UI/UX Designer": "Skills: Figma, Adobe XD, Prototyping, User Research, Wireframing.",
+    "Technical Writer": "Skills: Documentation, API Guides, Markdown, Clear Communication.",
+}
